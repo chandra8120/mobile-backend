@@ -24,6 +24,16 @@ const ChandraController = {
       res.status(500).json({ message: 'Internal Server Error' });
     }
   },
+  getAllChandra: async (req, res) => {
+    try {
+      const allChandra = await Chandra.find();
+
+      res.status(200).json(allChandra);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+  },
 };
 
 export default ChandraController;
