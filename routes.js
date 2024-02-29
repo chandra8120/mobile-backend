@@ -8,6 +8,6 @@ router.post("/postformdata",Form.createForm)
 router.get("/get",Form.getAllForms)
 //
 router.post("/postchandra",ChandraController.createChandra)
-
+router.post("/getchandra",ChandraController.getAllChandra)
 
 export default router
