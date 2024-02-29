@@ -4,9 +4,9 @@ import ChandraController from './Chandra.js'
 
 const router=express.Router()
 
-router.post("/post",Form.createForm)
+router.post("/postformdata",Form.createForm)
 router.get("/get",Form.getAllForms)
-
+//
 router.post("/postchandra",ChandraController.createChandra)
 
 
